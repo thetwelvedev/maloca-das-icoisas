@@ -1,4 +1,11 @@
 from tkinter import * # carrega todos os módulos da biblioteca
 
-janela = Tk() # Inicializa uma janela vazia
-janela.mainloop() # Cria um sistema de loop e fica a espera de algum evento.
+def sair():
+ janela.destroy()
+janela = Tk()
+janela.configure(background='green')
+janela.geometry('500x400')
+janela.title("Controle de Relés via interface gráfica")
+btn = Button(janela,text="Sair", command = sair)
+btn.pack(padx=100,pady=100)
+janela.mainloop()
