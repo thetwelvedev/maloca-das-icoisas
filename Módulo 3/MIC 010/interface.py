@@ -1,9 +1,12 @@
 from tkinter import * # carrega todos os módulos da biblioteca
+import random
 #funções
 def sair():
     janela.destroy()
 def mudarCor():
-    janela.configure(background='red')
+    cores = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+    cor_aleatoria = random.choice(cores)
+    janela.configure(background=cor_aleatoria)
 # Cria a janela principal
 janela = Tk()
 janela.configure(background='green')
@@ -11,10 +14,10 @@ janela.geometry('500x400')
 janela.title("Controle de Relés via interface gráfica")
 # Botão para fechar a janela
 btn = Button(janela,text="Sair", command = sair)
-btn.pack(padx=5, pady=5, expand=True, anchor="center")
+btn.pack(padx=5, pady=5,side="bottom", expand=True, anchor="center")
 # Botão para mudar a cor da janela
 btn2 = Button(janela,text="Mudar de Cor", command = mudarCor)
-btn2.pack(padx=5, pady=5, expand=True, anchor="center")
+btn2.pack(padx=5, pady=5,side="top", expand=True, anchor="center")
 
 janela.mainloop()
 
