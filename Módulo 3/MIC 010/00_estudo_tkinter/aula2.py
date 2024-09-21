@@ -1,7 +1,7 @@
 from tkinter import *
 
 janela = Tk()
-janela.title("Olá Mundo")
+janela.title("Label")
 janela.geometry('200x200')
 
 label = Label(janela, text="Primeiro label", font=("Arial Bold", 20), bg="green", fg="white") #adiciona o rótulo
