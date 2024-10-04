@@ -13,4 +13,11 @@ linguagens_programacao = ["Python", "Java", "C", "C++", "JavaScript", "Ruby", "G
 for i in linguagens_programacao:
     listbox.insert(END, i)
 
+#obtem o primeiro item da lista
+print(listbox.get(ACTIVE)) #Usar print para visualizar
+#obtem item dO INDEX
+print(listbox.get(1))
+#obtem o INTERVALO
+print(listbox.get(1, 2))
+
 janela.mainloop()
