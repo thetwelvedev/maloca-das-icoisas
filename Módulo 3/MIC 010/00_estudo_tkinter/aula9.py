@@ -11,5 +11,6 @@ listbox.grid(row=0, column=0)
 listbox.insert(0, "PHP") #<index>, <item>
 listbox.insert(1, "Python")
 listbox.insert(2, "Java")
+listbox.insert(END, "JavaScript") # insere no final da lista
 
 janela.mainloop()
