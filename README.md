@@ -6,8 +6,8 @@
 - [x] Módulo 1
 - [ ] Módulo 2
 - [ ] Módulo 3
-- [ ] Módulo 4
-- [ ] Módulo 5
+- [x] Módulo 4
+- [x] Módulo 5
 
 ***
 
